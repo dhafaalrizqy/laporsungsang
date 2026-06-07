@@ -1,8 +1,8 @@
 <?php
 
-use App\Providers\AppServiceProvider;
-
 return [
-    AppServiceProvider::class,
-    Spatie\Permission\PermissionServiceProvider::class
+    App\Providers\AppServiceProvider::class,
+    App\Providers\RepositoryServiceProvider::class,
+    Spatie\Permission\PermissionServiceProvider::class,
+    RealRashid\SweetAlert\SweetAlertServiceProvider::class,
 ];
