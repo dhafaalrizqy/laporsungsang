@@ -3,6 +3,20 @@
 @section('title', 'Home')
 
 @section('content')
+
+        {{-- Header dengan Logo Polres Sungsang --}}
+        <div class="d-flex align-items-center justify-content-between mb-3 pt-1">
+            <div class="d-flex align-items-center gap-2">
+                <img src="{{ asset('assets/app/images/logo-polres-sungsang.png') }}" 
+                     alt="Logo Polres Sungsang" 
+                     style="width: 44px; height: 44px; object-fit: contain;">
+                <div>
+                    <p class="fw-bold mb-0" style="font-size: 13px; color: var(--primary); line-height: 1.2;">POLSEK BANYUASIN II SUNGSANG</p>
+                </div>
+            </div>
+            {{-- Opsional: tambahkan tombol notifikasi atau profil di sini --}}
+        </div>
+
         <h6 class="greeting">
     @auth
         Hi, {{ Auth::user()->name }}👋
@@ -10,7 +24,6 @@
         Hi, Pengunjung👋
     @endauth
 </h6>
-        <h4 class="home-headline">Siap melayani keluhan masyarakat</h4>
 
         <div class="d-flex align-items-center justify-content-between gap-4 py-3 overflow-auto" id="category"
             style="white-space: nowrap;"> 

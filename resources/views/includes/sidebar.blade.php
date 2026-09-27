@@ -3,9 +3,11 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <img src="{{ asset('assets/app/images/logo-polres-sungsang.png') }}" 
+                     alt="Logo Polres Sungsang" 
+                     style="width: 44px; height: 44px; object-fit: contain;">
+                <div class="sidebar-brand-text mx-3">Lapor Sungsang</div>
             </a>
 
             <!-- Divider -->

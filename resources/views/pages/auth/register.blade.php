@@ -3,8 +3,19 @@
 @section('title', "Daftar")
 
 @section('content')
-    <h5 class="fw-bold mt-5">Daftar sebagai pengguna baru</h5>
-        <p class="text-muted mt-2">Silahkan mengisi form dibawah ini untuk mendaftar</p>
+
+{{-- Logo Polres Sungsang --}}
+<div class="d-flex flex-column align-items-center mt-4 mb-3">
+    <img src="{{ asset('assets/app/images/logo-polres-sungsang.png') }}" 
+         alt="Logo Polres Sungsang" 
+         style="width: 90px; height: 90px; object-fit: contain;">
+    <h6 class="fw-bold mt-2 text-center" style="color: var(--primary);">POLSEK BANYUASIN II SUNGSANG</h6>
+</div>
+
+<hr class="my-2">
+
+<h5 class="fw-bold mt-3">Daftar sebagai pengguna baru</h5>
+    <p class="text-muted mt-2">Silahkan mengisi form dibawah ini untuk mendaftar</p>
 
         <form action="{{ route('register.store') }}" method="POST" class="mt-4" enctype="multipart/form-data">
             @csrf
